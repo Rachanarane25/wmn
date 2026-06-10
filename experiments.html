@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Experiments | WMN Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <a class="nav-logo" href="index.html"><span class="nav-logo-icon">5G</span><span>WMN Portfolio</span></a>
+      <ul class="nav-links">
+        <li><a class="nav-link" href="index.html">Home</a></li>
+        <li><a class="nav-link active" href="experiments.html">Experiments</a></li>
+        <li><a class="nav-link" href="project.html">Course Project</a></li>
+      </ul>
+      <button class="theme-toggle" type="button" aria-label="Toggle dark mode">◐</button>
+      <button class="nav-hamburger" type="button" aria-label="Open menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+  <div class="nav-overlay"></div>
+
+  <main class="experiments-layout">
+    <aside class="exp-sidebar">
+      <nav class="breadcrumb"><a href="index.html">Home</a><span class="separator">/</span><span class="current">Experiments</span></nav>
+      <div class="sidebar-search">
+        <span class="search-icon">⌕</span>
+        <input id="experimentSearch" type="search" placeholder="Search experiments">
+      </div>
+      <ul class="exp-nav-list" id="experimentNav"></ul>
+    </aside>
+
+    <section class="exp-content">
+      <div class="section-header text-left mb-32">
+        <span class="section-label">WMN Laboratory</span>
+        <h1 class="section-title">Experiments</h1>
+        <p class="section-desc">Content is organized from the uploaded WMN course project PDF into aim, objectives, theory, procedure, screenshots, results, and conclusion sections.</p>
+      </div>
+      <div id="experimentPanels"></div>
+    </section>
+  </main>
+
+  <script src="js/experiment-data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
